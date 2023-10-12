@@ -1,4 +1,5 @@
-# Disaster Risk Monitoring Using Satellite Imagery from Nvidia Deep Learning Institute#
+# Disaster Risk Monitoring Using Satellite Imagery #
+## Nvidia Deep Learning Institute 
 
 ## Disaster Risk Monitoring ##
 Natural disasters such as flood, wildfire, drought, and severe storms wreak havoc throughout the world, causing billions of dollars in damages, and uprooting communities, ecosystems, and economies. The ability to detect, quantify, and potentially forecast natural disasters can help us minimize their adverse impacts on the economy and human lives. While this lab focuses primarily on detecting flood events, it should be noted that similar applications can be created for other natural disasters. 
