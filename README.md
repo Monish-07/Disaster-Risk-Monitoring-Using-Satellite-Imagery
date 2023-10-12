@@ -1,6 +1,6 @@
 # Disaster Risk Monitoring Using Satellite Imagery
 
-### By Nvidia Deep Learning Institute 
+##### By Nvidia Deep Learning Institute 
 
   
 
