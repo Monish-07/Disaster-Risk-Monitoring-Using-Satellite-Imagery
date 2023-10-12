@@ -20,10 +20,10 @@ The ability to detect flood and measure the extent of the disaster, can help dec
 In this lab, we demonstrate the ability to create a flood detection segmentation model using satellite imagery. Using satellites to study flood is advantageous since physical access to flooded areas is limited and deploying instruments in potential flood zones can be dangerous. Furthermore, satellite remote sensing is much more efficient than manual or human-in-the-loop solutions. 
 
 There are thousands of man-made satellites currently active in space. Once launched, a satellite is often placed in one of several orbits around Earth, depending on what the satellite is designed to achieve. Some satellites, such as those discussed in this lab, are used for Earth observation to help scientists learn about our planet while others could be used for communication or navigation purposes. 
-<p><img src='images/orbits.png' width=1080></p>
+
 
 Earth observation satellites have different capabilities that are suited for their unique purposes. To obtain detailed and valuable information for flood monitoring, satellite missions such as [Copernicus Sentinel-1](https://sentinel.esa.int/web/sentinel/missions/sentinel-1), provides C-band [**Synthetic Aperture Radar**](https://en.wikipedia.org/wiki/Synthetic-aperture_radar) (SAR) data. Satellites that use SAR, as opposed to _optical satellites_ that use visible or near-infrared bands, can operate day and night as well as under cloud cover. This form of radar is used to create two-dimensional images or three-dimensional reconstructions of objects, such as landscape. The two polar-orbiting Sentinel-1 satellites (Sentinel-1A and Sentinel-1B) maintain a repeat cycle of just _6_ days in the [Lower Earth Orbit (LEO)](https://en.wikipedia.org/wiki/Low_Earth_orbit). Satellites that orbit close to Earth in the LEO enjoy the benefits of faster orbital speed and data transfer. These features make the Sentinel-1 mission very useful for monitoring flood risk over time. Thus, a real-time AI-based remote flood level estimation via Sentinel-1 data can prove game-changing. 
-<p><img src='images/sentinel-1.jpg' width=720></p>
+
 
 More information about the Sentinel-1 mission can be found [here](https://directory.eoportal.org/web/eoportal/satellite-missions/c-missions/copernicus-sentinel-1).
 
@@ -39,7 +39,6 @@ At the heart of this type of disaster risk monitoring system is one or more mach
     * **Semantic segmentation** associates every pixel of an image with a class label such as `flood` and `not-flood`. It treats multiple objects of the same class as a single entity. 
     * In contrast, **instance segmentation** treats multiple objects of the same class as distinct individual instances. 
 
-<p><img src='images/computer_vision_tasks.jpg' width=720></p>
 
 For the purposes of detecting flood events, we will develop a _semantic segmentation_ model trained with labelled images that are generated from Sentinel-1 data.
 
@@ -53,7 +52,6 @@ The system that we envision consists of the below workflow:
 6. The deep learning inference results are post-processed for either 
 7. Further analytics by 3rd party or 
 8. Raising alerts
-<p><img src='images/system_workflow.png' width=720></p>
 
 When processing data in real-time, this system can help us in delineating open water flood areas. In addition, identifying flood levels will enable effective disaster response and mitigation. If we combine the flood extent mapping with other data such as topography and/or population, we can create a plan of action with downstream. We can also use this information to predict the direction of flow of water, redirect flood waters, organize resources for distribution, etc. Importantly, such a 
 system can recommend a path of least flood levels in real-time that disaster response professionals can potentially adopt.
